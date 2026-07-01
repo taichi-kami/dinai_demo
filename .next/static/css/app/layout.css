@@ -1,0 +1,402 @@
+/*!*************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./app/globals.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************/
+
+        @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Noto+Sans+JP:wght@300;400;500;700&display=swap');
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        .dinai-root {
+          min-height: 100vh;
+          background: #0a0a0f;
+          font-family: 'Noto Sans JP', sans-serif;
+          position: relative;
+          overflow-x: hidden;
+        }
+
+        .dinai-bg {
+          position: fixed;
+          inset: 0;
+          background:
+            radial-gradient(ellipse 80% 50% at 20% -10%, rgba(255,160,60,0.12) 0%, transparent 60%),
+            radial-gradient(ellipse 60% 40% at 80% 110%, rgba(255,100,40,0.10) 0%, transparent 60%),
+            radial-gradient(ellipse 100% 80% at 50% 50%, rgba(20,10,5,0.9) 0%, transparent 100%);
+          pointer-events: none;
+          z-index: 0;
+        }
+
+        .dinai-container {
+          position: relative;
+          z-index: 1;
+          max-width: 640px;
+          margin: 0 auto;
+          padding: 48px 20px 80px;
+        }
+
+        /* Header */
+        .dinai-header {
+          text-align: center;
+          margin-bottom: 40px;
+          animation: fadeDown 0.6s ease both;
+        }
+
+        .dinai-logo {
+          font-family: 'Syne', sans-serif;
+          font-size: 52px;
+          font-weight: 800;
+          letter-spacing: -2px;
+          line-height: 1;
+          margin-bottom: 10px;
+        }
+
+        .dinai-logo-d {
+          color: #ff8c38;
+        }
+
+        .dinai-logo-rest {
+          color: #f5f0eb;
+        }
+
+        .dinai-tagline {
+          color: #8a7a6a;
+          font-size: 14px;
+          font-weight: 300;
+          letter-spacing: 0.08em;
+        }
+
+        /* Card */
+        .dinai-card {
+          background: rgba(255,255,255,0.04);
+          border: 1px solid rgba(255,200,120,0.12);
+          border-radius: 24px;
+          padding: 40px 36px;
+          -webkit-backdrop-filter: blur(20px);
+                  backdrop-filter: blur(20px);
+          animation: fadeUp 0.7s ease both 0.1s;
+        }
+
+        .dinai-card-title {
+          font-family: 'Syne', sans-serif;
+          font-size: 22px;
+          font-weight: 700;
+          color: #f5f0eb;
+          margin-bottom: 6px;
+        }
+
+        .dinai-card-sub {
+          font-size: 13px;
+          color: #6a5a4a;
+          margin-bottom: 36px;
+          font-weight: 300;
+        }
+
+        /* Form */
+        .dinai-form {
+          display: flex;
+          flex-direction: column;
+          gap: 28px;
+        }
+
+        .dinai-field {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        }
+
+        .dinai-label {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          font-size: 13px;
+          font-weight: 500;
+          color: #c8b8a2;
+          letter-spacing: 0.04em;
+        }
+
+        .dinai-label-num {
+          font-family: 'Syne', sans-serif;
+          font-size: 10px;
+          font-weight: 700;
+          color: #ff8c38;
+          opacity: 0.7;
+          letter-spacing: 0.1em;
+        }
+
+        .dinai-label-val {
+          margin-left: auto;
+          font-family: 'Syne', sans-serif;
+          font-size: 16px;
+          font-weight: 700;
+          color: #ff8c38;
+        }
+
+        .dinai-label-unit {
+          font-size: 11px;
+          color: #8a7a6a;
+          font-weight: 400;
+          font-family: 'Noto Sans JP', sans-serif;
+        }
+
+        .dinai-input {
+          background: rgba(255,255,255,0.05);
+          border: 1px solid rgba(255,200,120,0.15);
+          border-radius: 12px;
+          padding: 12px 16px;
+          color: #f5f0eb;
+          font-size: 14px;
+          font-family: 'Noto Sans JP', sans-serif;
+          outline: none;
+          transition: border-color 0.2s, background 0.2s;
+        }
+
+        .dinai-input:focus {
+          border-color: rgba(255,140,56,0.5);
+          background: rgba(255,255,255,0.07);
+        }
+
+        .dinai-input--error {
+          border-color: rgba(255,80,80,0.5) !important;
+        }
+
+        .dinai-input::placeholder { color: #4a3a2a; }
+
+        .dinai-error {
+          font-size: 12px;
+          color: #ff6b6b;
+        }
+
+        /* Select */
+        .dinai-select-wrap {
+          position: relative;
+        }
+
+        .dinai-select {
+          width: 100%;
+          background: rgba(255,255,255,0.05);
+          border: 1px solid rgba(255,200,120,0.15);
+          border-radius: 12px;
+          padding: 12px 40px 12px 16px;
+          color: #f5f0eb;
+          font-size: 14px;
+          font-family: 'Noto Sans JP', sans-serif;
+          -webkit-appearance: none;
+             -moz-appearance: none;
+                  appearance: none;
+          outline: none;
+          cursor: pointer;
+          transition: border-color 0.2s;
+        }
+
+        .dinai-select:focus {
+          border-color: rgba(255,140,56,0.5);
+        }
+
+        .dinai-select option {
+          background: #1a1410;
+          color: #f5f0eb;
+        }
+
+        .dinai-select-arrow {
+          position: absolute;
+          right: 14px;
+          top: 50%;
+          transform: translateY(-50%);
+          color: #ff8c38;
+          font-size: 12px;
+          pointer-events: none;
+        }
+
+        /* Range */
+        .dinai-range {
+          -webkit-appearance: none;
+          -moz-appearance: none;
+               appearance: none;
+          width: 100%;
+          height: 4px;
+          border-radius: 2px;
+          background: rgba(255,255,255,0.08);
+          outline: none;
+          cursor: pointer;
+        }
+
+        .dinai-range::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          background: #ff8c38;
+          box-shadow: 0 0 0 4px rgba(255,140,56,0.15);
+          cursor: pointer;
+          -webkit-transition: box-shadow 0.2s;
+          transition: box-shadow 0.2s;
+        }
+
+        .dinai-range::-webkit-slider-thumb:hover {
+          box-shadow: 0 0 0 6px rgba(255,140,56,0.25);
+        }
+
+        .dinai-range-ticks {
+          display: flex;
+          justify-content: space-between;
+          font-size: 11px;
+          color: #4a3a2a;
+          margin-top: 4px;
+          font-weight: 300;
+        }
+
+        /* Pills */
+        .dinai-pill-group {
+          display: flex;
+          gap: 10px;
+          flex-wrap: wrap;
+        }
+
+        .dinai-pill {
+          background: rgba(255,255,255,0.04);
+          border: 1px solid rgba(255,200,120,0.12);
+          border-radius: 100px;
+          padding: 8px 20px;
+          font-size: 13px;
+          font-family: 'Noto Sans JP', sans-serif;
+          color: #8a7a6a;
+          cursor: pointer;
+          transition: all 0.2s;
+          font-weight: 400;
+        }
+
+        .dinai-pill:hover {
+          border-color: rgba(255,140,56,0.3);
+          color: #c8b8a2;
+        }
+
+        .dinai-pill--active {
+          background: rgba(255,140,56,0.15);
+          border-color: rgba(255,140,56,0.5);
+          color: #ff8c38;
+          font-weight: 500;
+        }
+
+        /* Time */
+        .dinai-time-group {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+        }
+
+        .dinai-time-input {
+          background: rgba(255,255,255,0.05);
+          border: 1px solid rgba(255,200,120,0.15);
+          border-radius: 12px;
+          padding: 12px 16px;
+          color: #f5f0eb;
+          font-size: 15px;
+          font-family: 'Noto Sans JP', sans-serif;
+          outline: none;
+          cursor: pointer;
+          transition: border-color 0.2s;
+          width: 130px;
+          text-align: center;
+          color-scheme: dark;
+        }
+
+        .dinai-time-input:focus {
+          border-color: rgba(255,140,56,0.5);
+        }
+
+        .dinai-time-sep {
+          color: #4a3a2a;
+          font-size: 18px;
+        }
+
+        /* Submit */
+        .dinai-submit {
+          width: 100%;
+          margin-top: 40px;
+          padding: 18px;
+          background: linear-gradient(135deg, #ff8c38 0%, #ff5c1a 100%);
+          border: none;
+          border-radius: 14px;
+          font-family: 'Syne', sans-serif;
+          font-size: 16px;
+          font-weight: 700;
+          color: #fff;
+          letter-spacing: 0.05em;
+          cursor: pointer;
+          transition: all 0.25s;
+          box-shadow: 0 4px 24px rgba(255,100,30,0.3);
+          position: relative;
+          overflow: hidden;
+        }
+
+        .dinai-submit::before {
+          content: '';
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, transparent 60%);
+          opacity: 0;
+          transition: opacity 0.2s;
+        }
+
+        .dinai-submit:hover::before { opacity: 1; }
+        .dinai-submit:hover { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(255,100,30,0.4); }
+        .dinai-submit:active { transform: translateY(0); }
+
+        .dinai-submit--loading {
+          opacity: 0.8;
+          cursor: not-allowed;
+          transform: none !important;
+        }
+
+        .dinai-submit-inner {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+        }
+
+        .dinai-submit-icon {
+          font-size: 14px;
+          animation: spin-slow 4s linear infinite;
+        }
+
+        .dinai-spinner {
+          width: 16px;
+          height: 16px;
+          border: 2px solid rgba(255,255,255,0.3);
+          border-top-color: #fff;
+          border-radius: 50%;
+          animation: spin 0.7s linear infinite;
+        }
+
+        .dinai-footer {
+          text-align: center;
+          margin-top: 32px;
+          font-size: 12px;
+          color: #3a2a1a;
+          font-weight: 300;
+          letter-spacing: 0.08em;
+        }
+
+        @keyframes fadeDown {
+          from { opacity: 0; transform: translateY(-16px); }
+          to   { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeUp {
+          from { opacity: 0; transform: translateY(20px); }
+          to   { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes spin {
+          to { transform: rotate(360deg); }
+        }
+
+        @keyframes spin-slow {
+          to { transform: rotate(360deg); }
+        }
+
+        @media (max-width: 480px) {
+          .dinai-card { padding: 28px 20px; }
+          .dinai-logo { font-size: 42px; }
+        }
+      
